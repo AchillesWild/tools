@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-lazy-init="true"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<context:component-scan base-package="com.dao,com.manager,com.service,com.biz,com.controller,com.cache.redis,com.design"/>
+
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath*:properties/db.properties</value>
+			</list>
+		</property>
+	</bean>
+
+ 	<import resource="classpath*:innerDataSource.xml" />
+
+ 	<import resource="classpath*:mybatis.xml" />
+	
+	<import resource="classpath*:redis.xml" />
+	
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="GBK"/>
+		<property name="maxUploadSize" value="#{1024*1024}"/>
+	</bean>
+
+</beans>
