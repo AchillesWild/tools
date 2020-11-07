@@ -10,7 +10,7 @@ public class JoinTest {
 			public void run() { 
 				
 				for(int m=0;m<10000;m++) {
-					System.out.println("**************AAAA*****************  "+m);;
+					System.out.println("**************AAAAASD*****************  "+m);;
 				}
 			  } 
 			} 
