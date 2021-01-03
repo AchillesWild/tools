@@ -1,6 +1,6 @@
 package com.tool.data;
 
-import com.service.impl.CitizenServiceImpl;
+import com.achilles.wild.server.service.impl.CitizenServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -20,7 +20,7 @@ public class CitizenExcelInfoTest{
 
     @Test
     public void simpleRead() {
-        // 这里 需要指定读用哪个class去读，然后读取第一个sheet 文件流会自动关闭
+        // 锟斤拷锟斤拷 锟斤拷要指锟斤拷锟斤拷锟斤拷锟侥革拷class去锟斤拷锟斤拷然锟斤拷锟饺★拷锟揭伙拷锟絪heet 锟侥硷拷锟斤拷锟斤拷锟皆讹拷锟截憋拷
       //  EasyExcel.read("/Users/achilleswild/Desktop/test.xls", DreamBenefitExcelUploadVO.class, new UploadExcelListener(citizenServiceImpl)).sheet().doRead();
     }
 }

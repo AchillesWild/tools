@@ -16,9 +16,9 @@ import com.alibaba.excel.support.ExcelTypeEnum;
 import com.alibaba.fastjson.JSON;
 
 import com.google.common.collect.Maps;
-import com.listener.UploadExcelListener;
-import com.model.DreamBenefitExcelUploadVO;
-import com.tool.date.DateUtil;
+import com.achilles.wild.server.listener.UploadExcelListener;
+import com.achilles.wild.server.model.DreamBenefitExcelUploadVO;
+import com.achilles.wild.server.tool.date.DateUtil;
 import org.junit.Test;
 
 public class EasyExcelUtilTest{
@@ -55,7 +55,7 @@ public class EasyExcelUtilTest{
         for (int i = 1; i <= 10; i++) {
             DreamBenefitExcelUploadVO dreamBenefitExcelUploadVO = new DreamBenefitExcelUploadVO();
             dreamBenefitExcelUploadVO.setItemId(i*3L);
-            dreamBenefitExcelUploadVO.setName("¹þµÂÁ¼"+i);
+            dreamBenefitExcelUploadVO.setName("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+i);
             dreamBenefitExcelUploadVO.setPublishDate(DateUtil.getTheDayFirstTime(7));
             dreamBenefitExcelUploadVO.setPublishDateEnd(DateUtil.getTheDayFirstTime(9));
             dreamBenefitExcelUploadVO.setItemCount(i+100);
@@ -64,7 +64,7 @@ public class EasyExcelUtilTest{
             list.add(dreamBenefitExcelUploadVO);
         }
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        EasyExcel.write(outputStream, DreamBenefitExcelUploadVO.class).excelType(ExcelTypeEnum.XLSX).sheet("ÏîÄ¿").doWrite(list);
+        EasyExcel.write(outputStream, DreamBenefitExcelUploadVO.class).excelType(ExcelTypeEnum.XLSX).sheet("ï¿½ï¿½Ä¿").doWrite(list);
         ByteArrayInputStream inputStream = new ByteArrayInputStream(outputStream.toByteArray());
         //String str = new String(outputStream.toByteArray());
         //BufferedReader br = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(outputStream.toByteArray()),"GBK"));
@@ -100,9 +100,9 @@ public class EasyExcelUtilTest{
 
     private  byte[] exportByteArray(String sheetName, List<DreamBenefitExcelUploadVO> dataList,
         Class clazz) throws Exception{
-        // ´´½¨·µ»ØÐÅÏ¢
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
         Map<String, List<DreamBenefitExcelUploadVO>> dataListMap = Maps.newLinkedHashMap();
-        // ½«¹¤×÷±í·ÅÈëµ½ExcelÖÐ
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ëµ½Excelï¿½ï¿½
         dataListMap.put(sheetName, dataList);
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
@@ -124,24 +124,24 @@ public class EasyExcelUtilTest{
 
     private void writeIntoOutputStream(Map<String, List<DreamBenefitExcelUploadVO>> dataListMap, Class clazz, OutputStream outputStream) {
 
-            // ¹¤×÷±í±àºÅ
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             int sheetNo = 1;
-            // ´´½¨ÎÄ¼þÁ÷
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
             ExcelWriter writer = EasyExcelFactory.getWriter(outputStream);
-            // Ñ­»·Ð´ÈëÃ¿¸ö¹¤×÷±í
+            // Ñ­ï¿½ï¿½Ð´ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             for (Entry<String, List<DreamBenefitExcelUploadVO>> entry : dataListMap.entrySet()) {
-                // µÃµ½¹¤×÷±íÃû³Æ
+                // ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 String sheetName = entry.getKey();
-                // µÃµ½¹¤×÷±íÊý¾Ý
+                // ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 List<DreamBenefitExcelUploadVO> dataList = entry.getValue();
-                // ÉèÖÃ¹¤×÷±íÐÅÏ¢
+                // ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
                 Sheet sheet1 = new Sheet(sheetNo++, 1, clazz, sheetName, null);
-                // ÉèÖÃ×ÔÊÊÓ¦¿í¶È
+                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½
                // sheet1.setAutoWidth(Boolean.TRUE);
-                // ¿ªÊ¼Ð´Êý¾Ý
+                // ï¿½ï¿½Ê¼Ð´ï¿½ï¿½ï¿½ï¿½
                 writer.write(dataList, sheet1);
             }
-            // Çå¿Õ»º´æ
+            // ï¿½ï¿½Õ»ï¿½ï¿½ï¿½
             writer.finish();
 
     }

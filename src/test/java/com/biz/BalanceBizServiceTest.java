@@ -8,12 +8,13 @@ import javax.annotation.Resource;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import com.model.request.account.BalanceRequest;
-import com.model.response.DataResult;
+import com.achilles.wild.server.biz.BalanceBiz;
+import com.achilles.wild.server.model.request.account.BalanceRequest;
+import com.achilles.wild.server.model.response.DataResult;
 import com.tool.BaseSpringJUnitTest;
-import com.tool.ThreadUtil;
-import com.tool.date.DateUtil;
-import com.tool.generate.unique.GenerateUniqueUtil;
+import com.achilles.wild.server.tool.ThreadUtil;
+import com.achilles.wild.server.tool.date.DateUtil;
+import com.achilles.wild.server.tool.generate.unique.GenerateUniqueUtil;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

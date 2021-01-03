@@ -1,6 +1,7 @@
 package com.tool.file.word;
 
 import org.junit.Test;
+import com.achilles.wild.server.tool.file.word.WordUtil;
 
 public class WordUtilTest {
 

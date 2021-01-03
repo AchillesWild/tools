@@ -9,9 +9,10 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.tool.data.CollectCitizenInfoTest;
-import com.tool.jdbc.MySqlUtil;
-import com.tool.jdbc.SqlUtil;
+import com.achilles.wild.server.tool.file.excel.ExcelReadUtil;
+import com.achilles.wild.server.tool.file.excel.ExcelWriteUtil;
+import com.achilles.wild.server.tool.jdbc.MySqlUtil;
+import com.achilles.wild.server.tool.jdbc.SqlUtil;
 
 /**
  * 数据库与excel数据互读互写

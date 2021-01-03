@@ -4,10 +4,10 @@ import java.util.Date;
 
 import javax.annotation.Resource;
 
-import com.model.request.account.BalanceRequest;
-import com.service.account.BalanceService;
+import com.achilles.wild.server.model.request.account.BalanceRequest;
+import com.achilles.wild.server.service.account.BalanceService;
 import com.tool.BaseSpringJUnitTest;
-import com.tool.generate.unique.GenerateUniqueUtil;
+import com.achilles.wild.server.tool.generate.unique.GenerateUniqueUtil;
 import org.junit.Test;
 
 public class BalanceServiceTest  extends BaseSpringJUnitTest {

@@ -1,14 +1,13 @@
 package com.tool.file.excel;
 
 import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.codec.digest.DigestUtils;
 import org.junit.Test;
+import com.achilles.wild.server.tool.file.excel.ExcelWriteUtil;
 
 public class ExcelWriteUtilTest {
 

@@ -8,7 +8,8 @@ import org.slf4j.LoggerFactory;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import com.tool.generate.unique.GenerateUniqueUtil;
+import com.achilles.wild.server.cache.AcountLock;
+import com.achilles.wild.server.tool.generate.unique.GenerateUniqueUtil;
 public class AcountLockTest {
 
     private final static Logger LOG = LoggerFactory.getLogger(AcountLockTest.class);

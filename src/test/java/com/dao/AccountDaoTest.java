@@ -2,7 +2,7 @@ package com.dao;
 
 import javax.annotation.Resource;
 
-import com.dao.account.AccountDao;
+import com.achilles.wild.server.dao.account.AccountDao;
 import com.tool.BaseSpringJUnitTest;
 import org.junit.Test;
 

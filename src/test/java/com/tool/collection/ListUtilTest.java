@@ -3,8 +3,8 @@ package com.tool.collection;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import com.entity.info.Citizen;
-import com.entity.info.CitizenDetail;
+import com.achilles.wild.server.entity.info.Citizen;
+import com.achilles.wild.server.entity.info.CitizenDetail;
 
 public class ListUtilTest {
 

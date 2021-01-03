@@ -7,8 +7,9 @@ import java.util.TreeMap;
 
 import org.junit.Test;
 
-import com.tool.generate.encrypt.MD5Utils;
-
+import com.achilles.wild.server.tool.generate.encrypt.MD5Utils;
+import com.achilles.wild.server.tool.http.HttpGetUtil;
+import com.achilles.wild.server.tool.http.HttpPostUtil;
 
 
 public class HttpGetUtilTest {

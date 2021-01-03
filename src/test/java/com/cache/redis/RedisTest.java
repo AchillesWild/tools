@@ -6,6 +6,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.tool.BaseSpringJUnitTest;
+import com.achilles.wild.server.cache.redis.BaseRedisTemplate;
+import com.achilles.wild.server.cache.redis.RedisClient;
 
 public class RedisTest extends BaseSpringJUnitTest {
 	private final static Logger LOG = LoggerFactory.getLogger(RedisTest.class);

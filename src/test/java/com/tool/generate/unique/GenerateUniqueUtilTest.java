@@ -1,6 +1,7 @@
 package com.tool.generate.unique;
 
 import org.junit.Test;
+import com.achilles.wild.server.tool.generate.unique.GenerateUniqueUtil;
 
 public class GenerateUniqueUtilTest {
 

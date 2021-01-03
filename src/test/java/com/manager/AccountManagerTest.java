@@ -2,7 +2,7 @@ package com.manager;
 
 import javax.annotation.Resource;
 
-import com.manager.account.AccountManager;
+import com.achilles.wild.server.manager.account.AccountManager;
 import com.tool.BaseSpringJUnitTest;
 import org.junit.Test;
 import org.slf4j.Logger;

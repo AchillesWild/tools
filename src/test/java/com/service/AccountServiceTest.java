@@ -2,10 +2,10 @@ package com.service;
 
 import javax.annotation.Resource;
 
-import com.enums.account.AccountTypeEnum;
-import com.model.request.account.AccountRequest;
-import com.model.response.DataResult;
-import com.service.account.AccountService;
+import com.achilles.wild.server.enums.account.AccountTypeEnum;
+import com.achilles.wild.server.model.request.account.AccountRequest;
+import com.achilles.wild.server.model.response.DataResult;
+import com.achilles.wild.server.service.account.AccountService;
 import com.tool.BaseSpringJUnitTest;
 import org.junit.Test;
 

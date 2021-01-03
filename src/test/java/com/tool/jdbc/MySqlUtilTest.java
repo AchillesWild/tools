@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Test;
+import com.achilles.wild.server.tool.jdbc.MySqlUtil;
 
 public class MySqlUtilTest {
 

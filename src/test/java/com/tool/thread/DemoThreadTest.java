@@ -5,9 +5,9 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 
-import com.thread.CallThread;
-import com.thread.DemoThread;
-import com.thread.RunnableThread;
+import com.achilles.wild.server.thread.CallThread;
+import com.achilles.wild.server.thread.DemoThread;
+import com.achilles.wild.server.thread.RunnableThread;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

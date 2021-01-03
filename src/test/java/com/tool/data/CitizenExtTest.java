@@ -4,13 +4,13 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
-import com.design.proxy.cglib.CglibInterceptor;
-import com.design.proxy.cglib.ServiceClient;
-import com.design.proxy.jdk.JavaProxyInvocationHandler;
-import com.entity.info.Citizen;
-import com.model.query.CitizenQuery;
-import com.model.response.DataResult;
-import com.service.CitizenService;
+import com.achilles.wild.server.design.proxy.cglib.CglibInterceptor;
+import com.achilles.wild.server.design.proxy.cglib.ServiceClient;
+import com.achilles.wild.server.design.proxy.jdk.JavaProxyInvocationHandler;
+import com.achilles.wild.server.entity.info.Citizen;
+import com.achilles.wild.server.model.query.CitizenQuery;
+import com.achilles.wild.server.model.response.DataResult;
+import com.achilles.wild.server.service.CitizenService;
 import com.tool.BaseSpringJUnitTest;
 import org.junit.Test;
 

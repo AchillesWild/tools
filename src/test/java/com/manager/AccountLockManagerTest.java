@@ -2,8 +2,8 @@ package com.manager;
 
 import javax.annotation.Resource;
 
-import com.constans.AccountConstant;
-import com.manager.account.atom.AccountLockAtomManager;
+import com.achilles.wild.server.constans.AccountConstant;
+import com.achilles.wild.server.manager.account.atom.AccountLockAtomManager;
 import com.tool.BaseSpringJUnitTest;
 import org.junit.Test;
 

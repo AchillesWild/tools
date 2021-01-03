@@ -4,8 +4,8 @@ import javax.annotation.Resource;
 
 import com.alibaba.fastjson.JSON;
 
-import com.dao.info.ParamsDao;
-import com.entity.info.Params;
+import com.achilles.wild.server.dao.info.ParamsDao;
+import com.achilles.wild.server.entity.info.Params;
 import com.tool.BaseSpringJUnitTest;
 import org.junit.Test;
 

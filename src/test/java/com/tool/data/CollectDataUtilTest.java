@@ -8,22 +8,17 @@ import java.util.Map;
 import java.util.Set;
 
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.dao.info.CitizenDao;
-import com.dao.info.CitizenDetailDao;
-import com.dao.info.LcsMemberDao;
 import com.tool.BaseSpringJUnitTest;
-import com.tool.data.collect.CollectDataUtil;
-import com.tool.file.excel.ExcelReadUtil;
-import com.tool.file.txt.TxtUtil;
-import com.tool.generate.unique.GenerateUniqueUtil;
-import com.tool.http.HttpPostUtil;
-import com.tool.jdbc.MySqlUtil;
-import com.tool.jdbc.SqlUtil;
+import com.achilles.wild.server.tool.data.collect.CollectDataUtil;
+import com.achilles.wild.server.tool.file.excel.ExcelReadUtil;
+import com.achilles.wild.server.tool.generate.unique.GenerateUniqueUtil;
+import com.achilles.wild.server.tool.http.HttpPostUtil;
+import com.achilles.wild.server.tool.jdbc.MySqlUtil;
+import com.achilles.wild.server.tool.jdbc.SqlUtil;
 
 public class CollectDataUtilTest extends BaseSpringJUnitTest{
 
