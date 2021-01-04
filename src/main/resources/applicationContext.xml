@@ -7,7 +7,7 @@
 			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-	<context:component-scan base-package="com.dao,com.manager,com.service,com.biz,com.controller,com.cache.redis,com.design"/>
+	<context:component-scan base-package="com.achilles.wild.server.dao,com.achilles.wild.server.manager,com.achilles.wild.server.service,com.achilles.wild.server.biz,com.achilles.wild.server.controller,com.achilles.wild.server.cache.redis,com.design"/>
 
 	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="ignoreUnresolvablePlaceholders" value="true" />

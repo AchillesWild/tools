@@ -46,7 +46,7 @@
 	<logger name="org.springframework.transaction" level="DEBUG" />
 
 	<!--打印sql-->
-	<logger name="com.dao" level="DEBUG"/>
+	<logger name="com.achilles.wild.server.dao" level="DEBUG"/>
 
 
 	<root level="DEBUG">
