@@ -12,7 +12,7 @@ import org.junit.Test;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.achilles.wild.server.tool.BaseSpringJUnitTest;
+import com.achilles.wild.server.tool.SpringbootApplicationTests;
 import com.achilles.wild.server.tool.data.collect.CollectDataUtil;
 import com.achilles.wild.server.tool.file.excel.ExcelReadUtil;
 import com.achilles.wild.server.tool.generate.unique.GenerateUniqueUtil;
@@ -20,7 +20,7 @@ import com.achilles.wild.server.tool.http.HttpPostUtil;
 import com.achilles.wild.server.tool.jdbc.MySqlUtil;
 import com.achilles.wild.server.tool.jdbc.SqlUtil;
 
-public class CollectDataUtilTest extends BaseSpringJUnitTest{
+public class CollectDataUtilTest extends SpringbootApplicationTests{
 
 	String str = "#$1870141 庞庞 庞  464哈82rth is牛eo$1870匹配1514亓 官648*";
 	@Test

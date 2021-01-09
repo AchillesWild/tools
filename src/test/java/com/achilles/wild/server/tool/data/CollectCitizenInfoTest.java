@@ -27,14 +27,14 @@ import com.achilles.wild.server.entity.info.CrmClient;
 import com.achilles.wild.server.entity.info.CrmOrder;
 import com.achilles.wild.server.entity.info.LcsMember;
 import com.achilles.wild.server.service.CitizenService;
-import com.achilles.wild.server.tool.BaseSpringJUnitTest;
+import com.achilles.wild.server.tool.SpringbootApplicationTests;
 import com.achilles.wild.server.tool.date.DateUtil;
 import com.achilles.wild.server.tool.file.excel.ExcelReadUtil;
 import com.achilles.wild.server.tool.file.excel.ExcelWriteUtil;
 import com.achilles.wild.server.tool.generate.unique.GenerateUniqueUtil;
 import com.achilles.wild.server.tool.http.HttpPostUtil;
 
-public class CollectCitizenInfoTest extends BaseSpringJUnitTest{
+public class CollectCitizenInfoTest extends SpringbootApplicationTests{
 	
 	private final static Logger log =LoggerFactory.getLogger(CollectCitizenInfoTest.class);
 

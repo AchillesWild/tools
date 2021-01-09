@@ -5,9 +5,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.achilles.wild.server.tool.BaseSpringJUnitTest;
+import com.achilles.wild.server.tool.SpringbootApplicationTests;
 
-public class RedisTest extends BaseSpringJUnitTest {
+public class RedisTest extends SpringbootApplicationTests {
 	private final static Logger LOG = LoggerFactory.getLogger(RedisTest.class);
 	
 	@Autowired

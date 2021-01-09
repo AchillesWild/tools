@@ -14,7 +14,7 @@ import com.achilles.wild.server.model.query.CitizenQuery;
 import com.achilles.wild.server.model.response.DataResult;
 import com.achilles.wild.server.service.CitizenService;
 import com.achilles.wild.server.task.RetryAddCitizensTask;
-import com.achilles.wild.server.tool.BaseSpringJUnitTest;
+import com.achilles.wild.server.tool.SpringbootApplicationTests;
 import com.achilles.wild.server.tool.date.DateConstant;
 import com.achilles.wild.server.tool.date.DateUtil;
 import com.achilles.wild.server.tool.generate.unique.GenerateUniqueUtil;
@@ -27,7 +27,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
-public class CitizenTest  extends BaseSpringJUnitTest{
+public class CitizenTest  extends SpringbootApplicationTests{
 
 	private final static Logger LOG = LoggerFactory.getLogger(CitizenTest.class);
 

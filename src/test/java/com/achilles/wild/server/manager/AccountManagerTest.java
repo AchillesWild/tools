@@ -3,12 +3,12 @@ package com.achilles.wild.server.manager;
 import javax.annotation.Resource;
 
 import com.achilles.wild.server.manager.account.AccountManager;
-import com.achilles.wild.server.tool.BaseSpringJUnitTest;
+import com.achilles.wild.server.tool.SpringbootApplicationTests;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class AccountManagerTest extends BaseSpringJUnitTest {
+public class AccountManagerTest extends SpringbootApplicationTests {
 
     private final static Logger LOG = LoggerFactory.getLogger(AccountManagerTest.class);
 

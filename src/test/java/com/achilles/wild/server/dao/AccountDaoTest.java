@@ -3,10 +3,10 @@ package com.achilles.wild.server.dao;
 import javax.annotation.Resource;
 
 import com.achilles.wild.server.dao.account.AccountDao;
-import com.achilles.wild.server.tool.BaseSpringJUnitTest;
+import com.achilles.wild.server.tool.SpringbootApplicationTests;
 import org.junit.Test;
 
-public class AccountDaoTest extends BaseSpringJUnitTest {
+public class AccountDaoTest extends SpringbootApplicationTests {
 
     @Resource
     private AccountDao accountDao;

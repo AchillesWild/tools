@@ -11,9 +11,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(locations = "classpath*:applicationContext.xml")
 //@Transactional
 //@TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = false)
-public class BaseSpringJUnitTest{
+public class SpringbootApplicationTests{
 	
-	private final static Logger log = LoggerFactory.getLogger(BaseSpringJUnitTest.class); 
+	private final static Logger log = LoggerFactory.getLogger(SpringbootApplicationTests.class);
 	
     @Before  
     public void before(){  

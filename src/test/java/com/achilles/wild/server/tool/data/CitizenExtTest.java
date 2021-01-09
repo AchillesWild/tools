@@ -11,10 +11,10 @@ import com.achilles.wild.server.entity.info.Citizen;
 import com.achilles.wild.server.model.query.CitizenQuery;
 import com.achilles.wild.server.model.response.DataResult;
 import com.achilles.wild.server.service.CitizenService;
-import com.achilles.wild.server.tool.BaseSpringJUnitTest;
+import com.achilles.wild.server.tool.SpringbootApplicationTests;
 import org.junit.Test;
 
-public class CitizenExtTest  extends BaseSpringJUnitTest {
+public class CitizenExtTest  extends SpringbootApplicationTests {
 
     @Resource
     private List<CitizenService> citizenServiceList;

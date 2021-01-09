@@ -6,10 +6,10 @@ import com.achilles.wild.server.enums.account.AccountTypeEnum;
 import com.achilles.wild.server.model.request.account.AccountRequest;
 import com.achilles.wild.server.model.response.DataResult;
 import com.achilles.wild.server.service.account.AccountService;
-import com.achilles.wild.server.tool.BaseSpringJUnitTest;
+import com.achilles.wild.server.tool.SpringbootApplicationTests;
 import org.junit.Test;
 
-public class AccountServiceTest  extends BaseSpringJUnitTest {
+public class AccountServiceTest  extends SpringbootApplicationTests {
 
     @Resource
     private AccountService accountService;

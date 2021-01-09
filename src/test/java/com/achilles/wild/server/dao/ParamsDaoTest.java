@@ -6,10 +6,10 @@ import com.alibaba.fastjson.JSON;
 
 import com.achilles.wild.server.dao.info.ParamsDao;
 import com.achilles.wild.server.entity.info.Params;
-import com.achilles.wild.server.tool.BaseSpringJUnitTest;
+import com.achilles.wild.server.tool.SpringbootApplicationTests;
 import org.junit.Test;
 
-public class ParamsDaoTest  extends BaseSpringJUnitTest {
+public class ParamsDaoTest  extends SpringbootApplicationTests {
 
     @Resource
     private ParamsDao paramsDao;

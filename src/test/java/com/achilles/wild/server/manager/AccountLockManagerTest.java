@@ -4,10 +4,10 @@ import javax.annotation.Resource;
 
 import com.achilles.wild.server.constans.AccountConstant;
 import com.achilles.wild.server.manager.account.atom.AccountLockAtomManager;
-import com.achilles.wild.server.tool.BaseSpringJUnitTest;
+import com.achilles.wild.server.tool.SpringbootApplicationTests;
 import org.junit.Test;
 
-public class AccountLockManagerTest extends BaseSpringJUnitTest {
+public class AccountLockManagerTest extends SpringbootApplicationTests {
 
 
     @Resource
