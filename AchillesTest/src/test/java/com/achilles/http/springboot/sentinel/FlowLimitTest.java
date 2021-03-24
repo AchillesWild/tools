@@ -19,7 +19,7 @@ public class FlowLimitTest extends SpringbootApplicationTests {
     @Test
     public void flowTest() throws Exception{
 
-        List<Long> list = new ArrayList<>();
+        final List<Long> list = new ArrayList<>();
         int max = 10;
         CountDownLatch count = new CountDownLatch(max);
         long startTime = System.currentTimeMillis();
@@ -30,13 +30,13 @@ public class FlowLimitTest extends SpringbootApplicationTests {
                 String result = HttpGetUtil.get(url+m,null);
                 long duration = System.currentTimeMillis() - threadStartTime;
                 list.add(duration);
-                log.info("-----------------"+m+"------------------"+result);
+                log.info("-----"+m+"-----result : "+result+",duration : "+duration);
                 count.countDown();
             }).start();
         }
         count.await();
         long duration = System.currentTimeMillis() - startTime;
-        log.info("---------------------------------duration : "+duration);
-        log.info("-----------------over----------------list : "+list);
+        log.info("---------------------------------total duration : "+duration);
+        log.info("-----------------over------------each duration : "+list);
     }
 }
